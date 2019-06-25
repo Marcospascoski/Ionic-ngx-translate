@@ -11,15 +11,14 @@ export class LanguagePopoverPage implements OnInit {
 
   languages = [];
   selected = '';
- 
-  constructor(private languageService: LanguageService, private popoverCtrl: PopoverController) { }
- 
-  ngOnInit() {
+constructor(private languageService: LanguageService, private popoverCtrl: PopoverController) { }
+
+ngOnInit() {
     this.languages = this.languageService.getLanguages();
     this.selected = this.languageService.selected;
   }
- 
-  select(lng) {
+
+select(lng) {
     this.languageService.setLanguage(lng);
     this.popoverCtrl.dismiss();
   }

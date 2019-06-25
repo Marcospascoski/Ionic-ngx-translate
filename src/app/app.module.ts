@@ -18,12 +18,12 @@ import { CoreModule } from './core/core.module';
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
-    BrowserModule, 
-    IonicModule.forRoot(), 
+    BrowserModule,
+    IonicModule.forRoot(),
     AppRoutingModule,
-    IonicStorageModule.forRoot(), 
+    IonicStorageModule.forRoot(),
     CoreModule,
-    HttpClientModule, 
+    HttpClientModule,
   ],
   providers: [
     StatusBar,

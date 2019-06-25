@@ -23,7 +23,7 @@ import { LanguagePopoverPage } from '../popover/language-popover/language-popove
       }
     ])
   ],
-  declarations: [HomePage,LanguagePopoverPage],
-  entryComponents:[LanguagePopoverPage]
+  declarations: [HomePage, LanguagePopoverPage],
+  entryComponents: [LanguagePopoverPage]
 })
 export class HomePageModule {}

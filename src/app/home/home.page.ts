@@ -14,27 +14,24 @@ export class HomePage implements OnInit, AfterContentChecked {
   params = { name: 'Marcos' };
 
   constructor(
-    private translate: TranslateService, 
-    private popoverCtrl: PopoverController, 
-    private alertCtrl: AlertController) {}
+    private translate: TranslateService,
+    private popoverCtrl: PopoverController,
+    private alertCtrl: AlertController) { }
 
-  ngOnInit() {
-   
-  }
+  ngOnInit() { }
 
   ngAfterContentChecked() {
     this.setPageTitle();
   }
 
   protected setPageTitle() {
-      this.pageTitle = this.getPageTitle();
+    this.pageTitle = this.getPageTitle();
   }
 
   protected getPageTitle(): string {
     this.translate.get('Home.title', { var: 'classes' })
-    .subscribe((res: string) => { this.pageTitle = res; });
+      .subscribe((res: string) => { this.pageTitle = res; });
     return this.pageTitle;
-    console.log(this.pageTitle)
   }
 
   async showAlert() {
@@ -45,7 +42,7 @@ export class HomePage implements OnInit, AfterContentChecked {
     });
     alert.present();
   }
- 
+
   async openLanguagePopover(ev) {
     const popover = await this.popoverCtrl.create({
       component: LanguagePopoverPage,

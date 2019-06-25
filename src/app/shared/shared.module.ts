@@ -23,7 +23,7 @@ export function customTranslateLoader(http: HttpClient) {
       }
     })
   ],
-  exports:[
+  exports: [
     CommonModule,
     TranslateModule
   ]
