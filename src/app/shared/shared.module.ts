@@ -22,6 +22,10 @@ export function customTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     })
+  ],
+  exports:[
+    CommonModule,
+    TranslateModule
   ]
 })
 export class SharedModule { }

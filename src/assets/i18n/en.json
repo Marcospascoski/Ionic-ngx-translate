@@ -1,0 +1,20 @@
+{
+    "Home": {
+        "title": "JSON text from page.ts",
+        "description": "Studing i18n",
+        "text1": "Example with pipes",
+        "text2": "Example with Directive",
+        "text3": "Example with Directive and html",
+        "btn": "Show Alert",
+        "name": "Hello {{name}} Welcome!",
+        "lang": "Select the Link",
+        "withcode": "You are <b> epic </ b> <br> <br>"
+    },
+    "Alert": {
+        "header": "Error!",
+        "msg": "There was a problem with your operation"
+    },
+    "Popover": {
+        "lng": "Select Language"
+    }
+}

@@ -1,28 +1,29 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-     {{ pageTitle }} 
+      {{ pageTitle }}
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openLanguagePopover($event)">
+        <ion-icon name="more" slot="icon-only">
+        </ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content padding>
 
-  <!-- With pipe -->
-  {{ 'Home.Title' | translate }}
- 
-  <!-- With directive 
-  <ion-text color="secondary" [translate]="'HOME.greeting'" [translateParams]="params"></ion-text>-->
- 
-  <!-- With directive and html
-  <ion-text color="secondary" [innerHTML]="'HOME.withcode' | translate"></ion-text>
- 
-  <ion-button expand="block" (click)="showAlert()">
-    {{ 'HOME.btn' | translate }}
-  </ion-button> -->
- 
+  <b>{{ 'Home.text1' | translate }}</b><br>
+  <ion-label color="primary">{{ 'Home.description' | translate }}</ion-label><br><br>
+  <ion-button (click)="showAlert()">{{ 'Home.btn' | translate }}</ion-button>
+  <br><br>
+
+  <b>{{ 'Home.text2' | translate }}</b><br>
+  <ion-text color="secondary" [translate]="'Home.name'" [translateParams]="params"></ion-text>
+  <br><br>
+
+  <b>{{ 'Home.text3' | translate }}</b><br>
+  <ion-text color="tertiary" [innerHTML]="'Home.withcode' | translate"></ion-text>
+
 </ion-content>

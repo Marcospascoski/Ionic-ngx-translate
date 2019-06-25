@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{'Popover.lng' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item button *ngFor="let lng of languages" (click)="select(lng.value)" detail="false">
+      <img [src]="lng.img" slot="start">
+      <ion-label text-wrap>
+        {{ lng.text }}
+      </ion-label>
+      <ion-icon slot="end" name="checkmark" *ngIf="lng.value == selected"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

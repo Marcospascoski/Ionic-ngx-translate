@@ -8,6 +8,7 @@ import { HomePage } from './home.page';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { SharedModule, customTranslateLoader } from '../shared/shared.module';
+import { LanguagePopoverPage } from '../popover/language-popover/language-popover.page';
 
 @NgModule({
   imports: [
@@ -15,14 +16,6 @@ import { SharedModule, customTranslateLoader } from '../shared/shared.module';
     FormsModule,
     IonicModule,
     SharedModule,
-    TranslateModule.forChild({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: customTranslateLoader,
-        deps: [HttpClient]
-      }
-    })
-    ,
     RouterModule.forChild([
       {
         path: '',
@@ -30,6 +23,7 @@ import { SharedModule, customTranslateLoader } from '../shared/shared.module';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage,LanguagePopoverPage],
+  entryComponents:[LanguagePopoverPage]
 })
 export class HomePageModule {}

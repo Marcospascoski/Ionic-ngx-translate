@@ -27,7 +27,8 @@ export class LanguageService {
 
   getLanguages() {
     return [
-      { text: 'Portugues Brasil', value: 'pt', img: 'assets/imgs/br.png' }
+      { text: 'Português Brasil', value: 'pt', img: 'assets/imgs/br.png' },
+      { text: 'Inglês', value: 'en', img: 'assets/imgs/en.png' }
     ];
   }
 

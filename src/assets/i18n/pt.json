@@ -1,6 +1,25 @@
 {
     "Home": {
-        "Title": "Home Ionic",
-        "Description": "Descrição"
+        
+        "title": "Texto .JSON do page.ts",
+        "description": "Estudando i18n",
+        "text1": "Exemplo com pipes",
+        "text2": "Exemplo com Directive",
+        "text3": "Exemplo com Directive e html",
+        "btn": "Show Alert",
+        "name": "Ola {{ name }} Bem-vindo!",
+        "lang": "Selecione a Liguagem",
+        "withcode" : "Você é <b>épico</b><br><br>"
+    },
+    "Alert": {
+        "header": "Erro!",
+        "msg": "Houve um problema com sua operação"
+    },
+    "Popover":{
+        "lng": "Selecione o Idioma"
+    },
+    "Language":{
+        "pt-BR": "Português Brasil",
+        "en": "Inglês"
     }
 }
