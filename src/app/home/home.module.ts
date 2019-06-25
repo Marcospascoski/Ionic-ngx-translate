@@ -6,14 +6,15 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { customTranslateLoader } from '../app.module';
 import { HttpClient } from '@angular/common/http';
+import { SharedModule, customTranslateLoader } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    SharedModule,
     TranslateModule.forChild({
       loader: {
         provide: TranslateLoader,
